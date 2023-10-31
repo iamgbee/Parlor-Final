@@ -3,7 +3,7 @@
   }
   .hero__container{
     row-gap: 3rem;
-    padding-top: 6rem !important;
+    padding-top: 4rem !important;
   }
   .hero__container.inner__container{
     overflow: visible !important;
