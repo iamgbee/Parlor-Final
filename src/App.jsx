@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route/>
       </Routes>
+      <Footer/>
     </Router>
   )
 }
