@@ -69,7 +69,7 @@ body {
 .container{
     width: min(1440px, var(--container--width-md));
     margin-inline: auto;
-    background: red;
+    /* background: red; */
 }
 .inner__container{
     width: 100%;

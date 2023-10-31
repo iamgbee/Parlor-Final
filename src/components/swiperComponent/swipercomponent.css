@@ -20,7 +20,7 @@
 .inner__container{
     margin-top: 3.5rem;
     overflow: hidden !important;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .wrap{
     width: 100%;
