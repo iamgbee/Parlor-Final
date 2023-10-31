@@ -3,7 +3,10 @@
   }
   .hero__container{
     row-gap: 3rem;
-    /* padding-top: 3.5rem !important; */
+    padding-top: 6rem !important;
+  }
+  .hero__container.inner__container{
+    overflow: visible !important;
   }
   .hero__images{  
     display: none;  
@@ -92,6 +95,7 @@
         margin-inline: auto;
         display: block; 
         height: max-content;
+        /* background-color: red; */
     }  
     .hero__img-1{
       width: 100%;
@@ -114,6 +118,7 @@
       left: -45px;
       width: 100px;
       height: auto;
+      z-index: 10 !important;
     }
     .hero__img-3{
       position: absolute;
@@ -121,6 +126,7 @@
       right: 30px;
       width: 50px;
       height: auto;
+      z-index: 10 !important;
     }
     .hero__img-4{
       position: absolute;
@@ -128,6 +134,7 @@
       right: -20px;
       width: 40px;
       height: auto;
+      z-index: 10;
     }
     .hero__stats{
       flex-direction: row;    
@@ -163,6 +170,10 @@
       grid-template-columns: 46% 54%; 
       padding: unset;
     }
+    .hero__container{
+      row-gap: 3rem;
+      padding-top: unset !important;
+    }
     .hero__data{
       margin-top: 2rem;
       /* background-color: yellow; */
@@ -187,6 +198,7 @@
     .hero__img-4{    
       min-width: 42px;  
       right: -169px;  
+      right: -160px;  
     }
     .dashed{
       width: 250px;
@@ -207,14 +219,15 @@
    }
   }
   
-  @media screen and (min-width: 1200px){ 
+  @media screen and (min-width: 1200px){    
     .hero__img-1{    
       min-width: 420px;    
     }
     .hero__img-4{    
       min-width: 42px;  
-      right: -125px;  
+      right: -125px;         
     }
+    
   }
   @media screen and (min-width: 1400px){
     .hero__container{
@@ -223,5 +236,8 @@
     .hero__img-1{    
       min-width: 470px;    
     }
-    
+    .hero__img-4{    
+      min-width: 42px;  
+      right: -170px;         
+    }
   }

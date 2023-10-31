@@ -69,13 +69,14 @@ body {
 .container{
     width: min(1440px, var(--container--width-md));
     margin-inline: auto;
+    overflow: hidden;
     /* background: red; */
 }
 .inner__container{
     width: 100%;
     max-width: 1100px;
-    /* background: red; */
-    margin-inline: auto;
+    /* background: purple; */
+    margin-inline: auto;    
 }
 
 .grid {
