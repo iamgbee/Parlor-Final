@@ -4,6 +4,7 @@
   .hero__container{
     row-gap: 3rem;
     padding-top: 4rem !important;
+    /* height: 100vh; */
   }
   .hero__container.inner__container{
     overflow: visible !important;

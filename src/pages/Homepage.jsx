@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Herosection from '../components/herosection/Herosection'
 import { Services } from '../components/services/Services';
+import Contact from '../components/contact/Contact';
 
 const Homepage = () => {
   useEffect(() => {
@@ -11,6 +12,7 @@ const Homepage = () => {
     <>
       <Herosection/>
       <Services/>
+      <Contact title='Contact Us' subtitle='Chat with our friendly team'/>
     </>
   )
 }

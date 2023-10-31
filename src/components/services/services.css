@@ -36,4 +36,8 @@
     right: -25px;
     top: -20px;
 }
-
+@media screen and (min-width:1024px) {
+    .services-section{
+        padding-top: 3rem;
+    }
+}

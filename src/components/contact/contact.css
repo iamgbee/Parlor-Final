@@ -1,0 +1,195 @@
+.contact-section{
+    background-color: #fff;    
+    width: 100%;    
+    padding-bottom: 3.5rem !important;
+    border-bottom: 10px solid #fff;
+}
+.contact-section .top{
+    text-align: center;
+}
+.contact-section .top .blue-span{
+    background-color: #1671D9;
+    padding:4px 12px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 12px;
+    color: #fff;    
+}
+.contact-section .section__description{
+    color:#000000;    
+    color: #ef7319;
+    font-size: var(--h1-font-size);
+    margin-top: 18px;
+    font-weight: 600;
+}
+.contact-section .inner__container{
+    /* background-color: purple !important; */
+    padding-inline: 10px !important;
+    padding-top: 0 !important;
+}
+.form__wrapper{
+    width: 100%;
+    margin-top: 2rem;
+}
+.contact__desc{    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact__desc .row{
+    display: flex !important;
+    align-items: center !important;
+    /* justify-content: space-between; */
+    justify-content: flex-start !important;
+    gap: 1rem;    
+}
+.big__paragraph, .small__paragraph{    
+    text-align: unset;
+    line-height: 30px;
+}
+.big__paragraph{
+    color: #1E1E1E;
+}
+.small__paragraph{
+    line-height: 24px;
+    color: #444444;
+}
+.row .icon{
+    color: var(--orange-color);
+    font-size: 30px;
+}
+.big__paragraph{
+    font-size: var(--h3-font-size);
+    font-weight: 400;
+}
+.small__paragraph{
+    font-weight: 400;
+}
+.form__wrapper form{
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 40px 32px 40px 32px; */
+    padding: 20px 16px;
+    /* gap: 1.5rem; */
+    gap: 1rem;
+    width: 100%;
+    max-width: 570px !important;
+    margin: unset;
+    /* margin-right: 10px !important; */
+}
+.form__wrapper form .name{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;   
+    width: 100%;
+    padding: unset;
+}
+.form__wrapper form .name input{
+    font-size: var(--normal-font-size);
+    margin-top: 0.5rem;
+    padding-left: 14px;
+}
+.form__wrapper form .message{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form__wrapper form .message textarea{
+    padding: 10px 14px 10px 14px;
+    border: 1px #A1A1AA solid;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    font-size: var(--normal-font-size);
+    resize: none;
+    font-family: inherit;
+}
+.form__wrapper form .check{
+    /* background-color: purple; */
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+.form__wrapper form .check input{
+    width: unset;
+    height: unset;
+    font-size: var(--normal-font-size);
+}
+.form__wrapper form .check span{
+    text-decoration: underline;
+}
+.form__wrapper form input{
+    margin-top: unset;
+    border-radius: 8px;
+    border: 1px #A1A1AA solid;  
+    font-size: var(--normal-font-size);  
+    padding-left: 14px;
+}
+.form__wrapper form input::placeholder{
+    /* color: green; */
+    padding: unset;
+}
+.form__wrapper form .email{
+    /* background: yellow; */
+    width: 100%;
+}
+.form__wrapper form .email input{
+    margin-top: 0.1rem;
+    font-size: var(--normal-font-size);  
+}
+
+.form__wrapper form .btn{
+    width: 100% !important;
+}
+.btn.disabled-button{    
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+form .success__msg{
+    text-align: center;
+    color: #ef7319;
+}
+@media screen and (max-width:340px){
+    .form__wrapper form{
+        max-width: 250px;
+        margin-inline: auto;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .row .icon{
+        font-size: 32px;
+    }
+    .form__wrapper{
+        grid-template-columns: 45% 55%;
+        width: 100%;
+        /* background-color: red; */
+       
+    }
+    .form__wrapper form .name{
+        flex-direction: row;
+        width: 100% !important;
+        /* background-color: red; */
+    }
+    .form__wrapper form .name div{
+        width: 100% !important;
+        /* flex: 1 !important; */
+    }
+    .form__wrapper form{
+        /* max-width: ; */
+        margin: unset;
+    }
+    .contact__desc{
+        gap: 3rem;
+        gap: 2.5rem;
+    }
+    .form__wrapper{
+        width: 100%;
+        /* margin-top: 5rem; */
+    }
+    .form__wrapper form{
+        padding: 40px 32px;
+    }
+}
