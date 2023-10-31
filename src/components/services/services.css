@@ -1,0 +1,38 @@
+.services-section{
+    padding-top: 6rem !important;    
+}
+.send-mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #EF7319;
+    font-size: 18px;
+    font-family: Public Sans;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 24px;
+    background: transparent;
+    transition: background 0.3s;
+    margin-inline: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.send-mail:hover .icon{
+    transform: translateX(0.25rem);
+}
+.sparkle-wrap{
+    position: relative; 
+    width: fit-content; 
+    margin-inline: auto; 
+    color: #EF7319; 
+}
+.sparkle{
+    width: 40px;
+    position: absolute;
+    right: 62px;
+    right: -25px;
+    top: -20px;
+}
+

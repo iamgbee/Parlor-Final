@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Herosection from '../components/herosection/Herosection'
+import { Services } from '../components/services/Services';
 
 const Homepage = () => {
   useEffect(() => {
@@ -9,6 +10,7 @@ const Homepage = () => {
   return (
     <>
       <Herosection/>
+      <Services/>
     </>
   )
 }
