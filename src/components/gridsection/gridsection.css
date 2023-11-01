@@ -1,6 +1,5 @@
 .grid-section{
-    padding: 0px !important;
-    margin-top: -20px !important;
+    margin-top: 0;
 }
 .grid-section .wrapper{
     display: grid;
