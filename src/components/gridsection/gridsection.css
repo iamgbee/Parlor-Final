@@ -1,7 +1,12 @@
+.grid-section{
+    padding: 0px !important;
+    margin-top: -20px !important;
+}
 .grid-section .wrapper{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 50px;
+    /* row-gap: 50px; */
+    background-color: unset !important;
 }
 .grid-section .wrapper .img-holder{
     width: 100%;
@@ -15,14 +20,14 @@
     .grid-section .wrapper{
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        row-gap: 40px;
+        /* row-gap: 40px; */
     }
 }
 @media screen and (min-width:1024px){
     .grid-section .wrapper{
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
-        row-gap: 50px;        
+        /* row-gap: px;         */
     }
     .grid-section .wrapper .img-holder{
         max-width: 100%;

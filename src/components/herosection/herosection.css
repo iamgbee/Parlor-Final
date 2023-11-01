@@ -42,6 +42,7 @@
   }
   .hero__container form{
     margin-top: 41px !important;  
+    margin-top: 1rem !important;  
     border-radius: 4rem;
     display: flex;
     flex-direction: column;
