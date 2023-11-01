@@ -1,0 +1,30 @@
+.grid-section .wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+}
+.grid-section .wrapper .img-holder{
+    width: 100%;
+    overflow: hidden;
+    /* max-width: 350px; */
+    height: 250px;
+    object-fit: contain;
+}
+
+@media screen and (min-width:700px) {
+    .grid-section .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        row-gap: 40px;
+    }
+}
+@media screen and (min-width:1024px){
+    .grid-section .wrapper{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        row-gap: 50px;        
+    }
+    .grid-section .wrapper .img-holder{
+        max-width: 100%;
+    }
+}
