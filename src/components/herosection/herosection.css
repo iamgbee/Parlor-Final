@@ -40,7 +40,7 @@
     width: 100%;
     height: 100%;
   }
-  form{
+  .hero__container form{
     margin-top: 41px;  
     border-radius: 4rem;
     display: flex;
@@ -49,8 +49,7 @@
     width: 90%;
     margin: 0 auto;
   }
-  form input, form button{
-    border: none;
+  .hero__container form input, .hero__container form button{    
     outline: none;
     font-family: var(--body-font);
     display: flex;
@@ -58,7 +57,7 @@
     align-items: center;
     justify-content: center;
   }
-  form input{
+  .hero__container form input{
     width: 100%;
     color: var(--text-color);
     background: #ffffff;
@@ -69,14 +68,13 @@
     margin-top: 1.5rem;
     font-size: var(--normal-font-size);
   }
-  form input::placeholder{
-    padding: 10px;
-    font-size: 1rem;
+  .hero__container form input::placeholder{    
+    font-size: var(--normal-font-size);
   }
-  .form .btn{
+  .hero__container .form .btn{
     border-radius: 15px !important;
   }
-  form .btn-primary{
+  .hero__container form .btn-primary{
     width: 100%;
     padding: 10px;
   }
@@ -141,7 +139,7 @@
       flex-direction: row;    
       /* justify-content: start;     */
     }
-    form{
+    .hero__container form{
       flex-direction: row;
       border: 1px #A1A1AA solid;
       border-radius: 15px;
@@ -151,12 +149,12 @@
       /* margin: unset; */
       
     }
-    form input{
+    .hero__container form input{
       /* width: 100%;     */
       border: none;   
       margin-top: unset;     
     }
-    form .btn-primary{
+    .hero__container form .btn-primary{
       width: 179px !important;
       width: unset;    
     }
@@ -205,7 +203,7 @@
       width: 250px;
       margin-inline: unset;
     }
-    form{
+    .hero__container form{
       margin: unset;
       margin-top: 41px;
       margin-top: 1.5rem;

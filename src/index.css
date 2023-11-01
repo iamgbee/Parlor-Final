@@ -73,9 +73,9 @@ body {
     /* background: red; */
 }
 .inner__container{
-    width: 100%;
-    max-width: 1100px;
-    /* background: purple; */
+    /* width: 100%; */
+    /* max-width: 1100px; */
+    width: min(1100px, var(--container--width-md));
     margin-inline: auto;    
 }
 
