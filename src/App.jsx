@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer';
 import Homepage from './pages/Homepage';
 import { ToastContainer } from 'react-toastify';
 import Aboutpage from './pages/aboutpage/Aboutpage';
+import Contactpage from './pages/contactpage/Contactpage';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,8 +17,8 @@ function App() {
       <Routes>
         <Route  path='/' Component={Homepage}/>
         <Route  path='/about_us' Component={Aboutpage}/>
-        <Route  path='/about_us' Component={Aboutpage}/>
-        <Route  path='/about_us' Component={Aboutpage}/>
+        <Route  path='/our_services' Component={Aboutpage}/>
+        <Route  path='/contact_us' Component={Contactpage}/>
         <Route  path='*' Component={Homepage}/>
         <Route/>
       </Routes>

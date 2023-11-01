@@ -1,0 +1,35 @@
+.contact-page{
+    margin-top: calc(var(--header-height) + 85px);       
+}
+.contact-page .top-section{
+    text-align: center;
+}
+.contact-page .container .blue-span{
+    background-color: #1671D9;
+    padding:4px 12px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 12px;
+    color: #fff;
+    margin-inline: auto !important;
+}
+.contact-page h1{
+    font-weight: 400;
+    font-size: var(--biggest-font-size1);    
+    color: #1A1A1A;
+    text-align: center;
+}
+.contact-page h1 span{
+    color: #EF7319;
+}
+.contact-page p.sub-heading{
+    text-align: center;
+    max-width: 830px;
+    margin-inline: auto;
+    color: #15182A;
+    font-size: var(--h2-font-size);
+    margin-top: 24px;
+}
+/* .contact-page .contact-section{
+    margin-top: 108px;
+} */
