@@ -1,0 +1,41 @@
+.faqs h1, p{
+    text-align: center;
+}
+.faqs .container{    
+    width: min(768px, 90%);
+    /* background-color: blue;     */
+}
+.faqs__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.faq{
+    padding-block: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.faq p{
+    text-align: unset;
+    color: #444444;
+    font-weight: 400;
+    font-size: var(--normal-font-size);
+}
+.faqs h1{
+    font-size: var(--h1-font-size);
+}
+.faq h4{
+    color: #101828;
+    font-weight: 700;
+    font-size: var(--h3-font-size);
+}
+.faq div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.faq__icon{
+    background: transparent;
+    font-size: 1.5rem;    
+}

@@ -1,0 +1,34 @@
+.question .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 4rem;
+}
+.question .container .btn{    
+    margin-top: 0.7rem; 
+}
+
+.question img{
+    width: 100px;
+}
+.question h1{
+    font-weight: 700;
+    color:#101828;
+    font-size: var(--h2-font-size);
+}
+.question p{
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+    color:#444444;
+}
+
+@media screen and (min-width: 1024px) {
+    .question.container{
+        gap: 0.8rem;
+    }
+    .question img{
+        width: 120px;
+    }    
+}

@@ -1,0 +1,34 @@
+.engage.section{
+    text-align: center;    
+}
+.engage.section h3{
+    color: #ef7319;
+    font-size: var(--normal-font-size);
+    font-weight: 600;    
+}
+.engage.section .section__title{     
+     font-weight: 600;
+     color: #12100E;
+     max-width: 800px;
+     margin-inline: auto;
+     margin-top: 12px;
+     margin-bottom: 16px;
+}
+.engage.section p{
+    color: #444444;
+}
+.engage.section p span{
+    color: var(--orange-color);
+}
+.engage.section .btn__group{
+    width: max-content;
+    margin-inline: auto;
+    gap: 0.5rem;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:340px) {
+    .engage.section .btn__group{
+        flex-direction: column;
+    }
+}
