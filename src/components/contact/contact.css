@@ -29,7 +29,7 @@
 }
 .form__wrapper{
     width: 100%;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 .contact__desc{    
     width: 100%;
@@ -153,8 +153,9 @@ form .success__msg{
 }
 @media screen and (max-width:340px){
     .form__wrapper form{
-        max-width: 250px;
+        max-width: 200px;
         margin-inline: auto;
+        padding: unset !important;
     }
 }
 @media screen and (min-width: 1024px) {
