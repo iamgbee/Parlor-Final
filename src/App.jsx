@@ -8,12 +8,29 @@ import { ToastContainer } from 'react-toastify';
 import Aboutpage from './pages/aboutpage/Aboutpage';
 import Contactpage from './pages/contactpage/Contactpage';
 import Servicespage from './pages/servicespage/Servicespage';
+import ScrollReveal from 'scrollreveal';
 
 function App() {
-  const [count, setCount] = useState(0);
+  useEffect(() => {
+    // Create a ScrollReveal configuration object
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '60px',
+      duration: 2500,
+      delay: 400,
+    });
+
+    // Apply ScrollReveal to your elements
+    sr.reveal('.hero__images, .services-section, .footer__description, .footer__content, .footer__info');
+    sr.reveal('.hero__data, .footer', { origin: 'bottom' });
+    sr.reveal('.about__data, .recently__data', { origin: 'left' });
+    sr.reveal('.about__img, .recently__img', { origin: 'right' });
+    sr.reveal('.slide', { interval: 100 });
+  }, []); // The empty dependency array ensures this effect runs once after component mounting.
 
   return (
-    <Router>
+    <>
+      <Router>
       <Navbar/>
       <Routes>
         <Route  path='/' Component={Homepage}/>
@@ -26,6 +43,8 @@ function App() {
       <ToastContainer theme='light'/>
       <Footer/>
     </Router>
+    </>
+    
   )
 }
 

@@ -36,6 +36,15 @@ export const faqs = [
 export const slideContents = [
     {
         id: 1,
+        title: 'Product Testing',
+        imgURL: img2,
+        moreInfo: ['A/B Testing: Rigorous testing methodologies to refine and optimize campaign performance.',
+        'User Feedback Analysis: Gather insights from user interactions to enhance product offerings.',
+        'Market Research: Assess product viability and customer preferences through comprehensive research.'
+        ]
+    },
+    {
+        id: 2,
         title: 'Paid Search Solution',
         imgURL: img1,
         moreInfo: ['Google Ads: Precision-targeted campaigns to capture online search traffic.',
@@ -45,16 +54,7 @@ export const slideContents = [
         'Discovery Ads: Seamless integration into user content discovery experiences.',
         'Microsoft Bing Ads: Extend your reach to a diverse audience through Bing\'s search engine.'
         ]
-    },
-    {
-        id: 2,
-        title: 'Product Testing',
-        imgURL: img2,
-        moreInfo: ['A/B Testing: Rigorous testing methodologies to refine and optimize campaign performance.',
-        'User Feedback Analysis: Gather insights from user interactions to enhance product offerings.',
-        'Market Research: Assess product viability and customer preferences through comprehensive research.'
-        ]
-    },
+    },   
     {
         id: 3,
         title: 'Perfomance Marketing',
