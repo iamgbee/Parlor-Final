@@ -82,15 +82,15 @@ const Herosection = () => {
                         <div className='stat__card'>
                             <span>12K</span>
                             <div>
-                                <p>Ads</p>
-                                <p>Generated</p>
+                                <p>Booked </p>
+                                <p>Appointments.</p>
                             </div>
                         </div>
                         <div className='stat__card'>
-                            <span>Over 6K</span>
+                            <span>$1M+</span>
                             <div>
-                                <p>Booked </p>
-                                <p>Appointments</p>
+                                <p>Transactions</p>
+                                <p>Completed.</p>
                             </div>
                         </div>
                     </div>
