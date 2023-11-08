@@ -21,10 +21,11 @@
     text-align: center;
   }
   .hero__title{
-    font-size: var(--biggest-font-size1);
+    /* font-size: var(--biggest-font-size1); */
+    font-size: var(--biggest-font-size);
     font-family: var(--title-font);
     margin-bottom: 1rem; 
-    font-weight: 800;
+    font-weight: 800;    
   }
   .hero__description{
     font-weight: 400;
@@ -79,8 +80,49 @@
     width: 100%;
     padding: 10px;
   }
- 
- 
+  .hero__stats{
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;  
+    /* justify-content: space-between; */
+    margin-top: 1rem;
+  }
+  .stat__card{
+    display: flex;
+    /* margin-top: 10px;  */
+    gap: 0.5rem;
+    /* background-color: yellow; */
+    align-items: flex-end;
+  }
+  .stat__card div{  
+    align-self: flex-end; 
+    line-height: 20px; 
+  }
+  .stat__card div p{
+    text-align: left;
+    margin: 0;
+  }
+  .stat__card span{
+    font-size: 1.7rem;
+    font-family: var(--title-font);
+    font-weight: 500;  
+  }
+  .stat__card p{
+    font-size: var(--smaller-font-size);
+  }
+  
+  @media screen and (max-width:340px) {
+    .hero__stats{
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .stat__card span{
+      font-size: 1.5rem;
+    }
+  }
   
   /* For medium devices */
   @media screen and (min-width: 576px){
@@ -138,6 +180,7 @@
     }
     .hero__stats{
       flex-direction: row;    
+      gap: 2rem;
       /* justify-content: start;     */
     }
     .hero__container form{
@@ -166,8 +209,9 @@
   @media screen and (min-width: 1102px){
     .hero__container{
       position: relative;   
-      grid-template-columns: 480px auto;    
+      /* grid-template-columns: 480px auto;     */
       grid-template-columns: 46% 54%; 
+      grid-template-columns: 50% 50%; 
       padding: unset;
     }
     .hero__container{
@@ -208,8 +252,7 @@
       margin: unset;
       margin-top: 41px;
       margin-top: 1.5rem;
-    }
-        
+    }        
     .hero__data{
       text-align: initial;
       order: -1;
@@ -217,6 +260,16 @@
    .hero__description{
     max-width: 424px;
    }
+   .hero__stats{
+    flex-direction: row;    
+    justify-content: start;    
+  }
+  .stat__card span{
+    font-size: 2.625rem;
+  }
+  .stat__card span{
+    margin-bottom: -0.3rem;
+  }
   }
   
   @media screen and (min-width: 1200px){    

@@ -13,7 +13,7 @@ const Herosection = () => {
     const [message, setMessage] = useState('');
     const [email, setEmail] = useState('');
     const [isLoading, setIsLoading] = useState(false);
-
+    // https://script.google.com/macros/s/AKfycbxc40_VYgYTM6aYfZm5hrsBZ3ddi31LH2WdnunWD8oih4AKkb57kkkqtvsPvOo2C-EU/exec
     const handleSubmit = (e) => {
         e.preventDefault(); 
         setIsLoading(true);       
@@ -25,9 +25,9 @@ const Herosection = () => {
         const formDataObject = new FormData();        
         formDataObject.append('email', email);        
         formDataObject.append('submissionTime', formattedDateTime);// Set the submissionTime here
-
+        // https://script.google.com/macros/s/AKfycbyNV6780P2vQeym5oC9-LRyaqztDsVa2PGndZ0I-MPAS0VyfTnlkac6KbDbV7Qzt0HK/exec
         fetch(
-          'https://script.google.com/macros/s/AKfycbyNV6780P2vQeym5oC9-LRyaqztDsVa2PGndZ0I-MPAS0VyfTnlkac6KbDbV7Qzt0HK/exec',
+          'https://script.google.com/macros/s/AKfycbxc40_VYgYTM6aYfZm5hrsBZ3ddi31LH2WdnunWD8oih4AKkb57kkkqtvsPvOo2C-EU/exec',
           {
             method: 'POST',
             body: formDataObject,
@@ -78,6 +78,22 @@ const Herosection = () => {
                         <button className='btn-primary btn'>{isLoading && <i className='bx bx-loader-alt bx-spin'></i>}{isLoading ? 'Contacting...' : 'Contact Us'}</button>
                     </form>
                     {message && <p className='messenger'>{message}</p>} 
+                    <div className='hero__stats'>
+                        <div className='stat__card'>
+                            <span>12K</span>
+                            <div>
+                                <p>Ads</p>
+                                <p>Generated</p>
+                            </div>
+                        </div>
+                        <div className='stat__card'>
+                            <span>Over 6K</span>
+                            <div>
+                                <p>Booked </p>
+                                <p>Appointments</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

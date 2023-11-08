@@ -28,7 +28,8 @@ const Contact = ({ title, subtitle }) => {
 
     const currentDateTime = new Date();
     const formattedDateTime = currentDateTime.toLocaleString();
-
+    // https://script.google.com/macros/s/AKfycbwRgxRXt2gRNDzpXCgA7b0-qEUfc_vLVXThHVeWqZeuB3dcBP6IhV64UhT7iI7nBs4u/exec
+    // https://script.google.com/macros/s/AKfycbyPyKblYE9jxSCnU0REmwYcPnnrUrA0CQfafc3RIY_b201VdhSomNNE4ubyUIdNWiA6/exec
     // Set the submissionTime directly in the form data
     const formDataObject = new FormData();
     formDataObject.append('firstname', formData.firstName);
@@ -39,7 +40,7 @@ const Contact = ({ title, subtitle }) => {
 
     // https://script.google.com/macros/s/AKfycbw5vRyxlopvG9B6aHYfV4yb_ZFnWPWKL7mzCyi_3Ltx8dqTuSw1MbXC2jCqG9QoJaU/exec
     fetch(
-      'https://script.google.com/macros/s/AKfycbyPyKblYE9jxSCnU0REmwYcPnnrUrA0CQfafc3RIY_b201VdhSomNNE4ubyUIdNWiA6/exec',
+      'https://script.google.com/macros/s/AKfycbwRgxRXt2gRNDzpXCgA7b0-qEUfc_vLVXThHVeWqZeuB3dcBP6IhV64UhT7iI7nBs4u/exec',
       {
         method: 'POST',
         body: formDataObject,
