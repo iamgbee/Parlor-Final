@@ -14,13 +14,13 @@ const Footer = () => {
         <div className="footer">
           <div className="container">
             <p className='small'>CONVINCED?</p>
-            <p>Let’s create magic together</p>
-            <p>
+            <p>Boost your sales, book appointments! Get a FREE expert ad account review at Parlor Digital today</p>
+            {/* <p>
               Let us unleash our creativity and
               expertise to create designs that deliver
               extraordinary results.
-            </p>
-            <button className='btn btn-primary' onClick={() => navigate('/contact_us')}>Shoot us a DM</button>
+            </p> */}
+            <button className='btn btn-primary' onClick={() => navigate('/contact_us')}>Contact Us</button>
             <div className='links'>
               <img src={Logo} alt="" className='logo' onClick={() => navigate('/')}/>
               <span>

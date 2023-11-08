@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import FAQs from '../../components/faqs/FAQs';
 import Question from '../../components/question/Question';
 import Loading from '../../components/loading/Loading';
+import LogosSlide from '../../components/logosslide/LogosSlide';
 
 const Aboutpage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,6 +43,7 @@ const Aboutpage = () => {
             <OurStory/>
             <Services/>
             <Engage/>
+            <LogosSlide title='Portfolio'/>
             <FAQs/>
             <Question/>    
           </div>

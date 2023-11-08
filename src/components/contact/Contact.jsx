@@ -99,7 +99,9 @@ const Contact = ({ title, subtitle }) => {
                       <BiPhone className='icon'/>
                       <div>
                         <p className='big__paragraph'>Call on Us</p>
-                        <p className='small__paragraph'>+21 08 510 290</p>
+                        <p className='small__paragraph'>+1 (210) 851-0290</p>
+                        <p className='small__paragraph'>+1 (210) 612-8889</p>
+                        <p className='small__paragraph'>(+243) 906 592 8573</p>
                       </div>
                     </div>
                     <div className='row'>
