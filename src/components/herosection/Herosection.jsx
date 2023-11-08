@@ -27,7 +27,7 @@ const Herosection = () => {
         formDataObject.append('submissionTime', formattedDateTime);// Set the submissionTime here
         // https://script.google.com/macros/s/AKfycbyNV6780P2vQeym5oC9-LRyaqztDsVa2PGndZ0I-MPAS0VyfTnlkac6KbDbV7Qzt0HK/exec
         fetch(
-          'https://script.google.com/macros/s/AKfycbwRgxRXt2gRNDzpXCgA7b0-qEUfc_vLVXThHVeWqZeuB3dcBP6IhV64UhT7iI7nBs4u/exec',
+          'https://script.google.com/macros/s/AKfycbyoWd3y6NMUR0ipsyCRZ7djy4bIw0-YXtjxMbKh2bxPAGkDa9IZK4Jo8b3ZBj944B45/exec',
           {
             method: 'POST',
             body: formDataObject,
