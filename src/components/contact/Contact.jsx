@@ -40,7 +40,7 @@ const Contact = ({ title, subtitle }) => {
 
     // https://script.google.com/macros/s/AKfycbw5vRyxlopvG9B6aHYfV4yb_ZFnWPWKL7mzCyi_3Ltx8dqTuSw1MbXC2jCqG9QoJaU/exec
     fetch(
-      'https://script.google.com/macros/s/AKfycbxc40_VYgYTM6aYfZm5hrsBZ3ddi31LH2WdnunWD8oih4AKkb57kkkqtvsPvOo2C-EU/exec',
+      'https://script.google.com/macros/s/AKfycbzRvKy1EsmlKCAFfdPyogpRDbllumwcIESJrzXjqSy3i_AurMv2dxhyVx7D1ySTShm_Gg/exec',
       {
         method: 'POST',
         body: formDataObject,
