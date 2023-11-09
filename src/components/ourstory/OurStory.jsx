@@ -12,8 +12,9 @@ const OurStory = () => {
                     <p>Why we started.</p>
                 </div>
                 <div className="bottom">
-                    <p>Parlor Digital is a leading digital marketing agency specializing in paid search, ecommerce, social media, content, performance marketing, and A/B testing.</p>
-                    <p>We use advanced data systems and machine learning to standardize campaigns for real-time conversion measurement and deliver tangible results. Our approach has helped us generate over 100,000 quality leads and calls for our diverse clientele, including local businesses.</p>
+                    <p>Parlor Digital, born from a passion for local businesses, started 14 years ago in Detroit to offer struggling businesses affordable access to customers through strategic online marketing. Traditional agencies cater to larger organizations, often at a hefty cost.</p>
+                    
+                    <p>Our mission is to bridge this gap and empower local businesses with targeted Facebook ads and strategic display placements. From our city roots, we've evolved into a versatile force, excelling in industries such as Health Advertising, Automobile, B2B & D2C Commerce, and B2C & Google Ads. Our journey, deeply rooted in Detroit, has successfully connected businesses with their audiences in the digital landscape. Today, our commitment remains steadfast, fostering success for local businesses across diverse industries.</p>
                 </div>
             </div>
         </div>

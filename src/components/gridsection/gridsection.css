@@ -13,7 +13,7 @@
     /* max-width: 350px; */
     height: 250px;
     object-fit: contain;
-}
+   }
 
 @media screen and (min-width:700px) {
     .grid-section .wrapper{

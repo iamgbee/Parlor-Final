@@ -16,16 +16,35 @@
 }
 .our__story-section .top p{
     color: #fff;
+    font-size: var(--h3-font-size);
+    
 }
 .our__story-section .bottom p{
     color: #fff;    
     margin-top: 1rem;
+    font-size: var(--h3-font-size);
+    font-weight: normal;
+    letter-spacing: 150% !important;
+    text-align: center;
+}
+.our__story-section .bottom ul{
+    margin-left: 50px;
+    /* text-align: center; */
+}
+.our__story-section .bottom ul li{
+    color: #fff; 
+    list-style: disc !important;
+    margin-top: 15px;
+    font-size: var(--h3-font-size);
 }
 @media screen and (min-width: 1024px) {
     .our__story-section .top .div{
         width: 101px;
         height: 3px;
         margin-inline: unset;
+    }
+    .our__story-section .bottom ul{
+        margin-left: 50px;
     }
     .our__story-section .top h1{
         margin-block: 34px;

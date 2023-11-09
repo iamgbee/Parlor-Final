@@ -1,9 +1,10 @@
-import img1 from './assets/img1.png'
+import img1 from './assets/img10.PNG'
 import img2 from './assets/img2.png'
 import img3 from './assets/img3.png'
 import img4 from './assets/img4.png'
 import img5 from './assets/img5.png'
 import img6 from './assets/img6.png'
+import img7 from './assets/img7.png'
 
 export const faqs = [
     {
@@ -86,6 +87,12 @@ export const slideContents = [
         'TikTok Ads: Leverage the power of short-form video for brand visibility.',
         'LinkedIn Ads: Reach a professional audience on the leading business platform.'
         ]
+    },
+    {
+        id: 7,
+        title: 'UI/UX Design',
+        imgURL: img7,
+        moreInfo: ['Craft visually appealing and user-friendly interfaces to enhance digital experiences.']
     },
 ]
 

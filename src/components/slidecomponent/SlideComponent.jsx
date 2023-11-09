@@ -4,7 +4,10 @@ import './slidecomponent.css'
 
 const SlideComponent = ({image, title, moreInfo}) => {
     const [isMoreInfoShowing, setIsMoreInfoShowing] = useState(false);
+    const [visibleItems, setVisibleItems] = useState(1);
     const navRef = useRef(null);
+    console.log('mORE ', moreInfo);
+    console.log(moreInfo.slice(0, visibleItems));
   
     const closeNav = (e) => {
       // Check if the click occurred outside the navigation menu and toggle button
@@ -13,7 +16,7 @@ const SlideComponent = ({image, title, moreInfo}) => {
           !navRef.current.contains(e.target) &&
           e.target.className !== 'nav__toggle'
       ) {
-        setIsMoreInfoShowing(false);
+        setVisibleItems(1);
       }
     };
     useEffect(() => {  
@@ -23,18 +26,42 @@ const SlideComponent = ({image, title, moreInfo}) => {
       }       
     },[]);
 
+    const handleShowMoreClick = () => {
+      setIsMoreInfoShowing(!isMoreInfoShowing); // Toggle the state
+    
+      if (visibleItems === 1) {
+        setVisibleItems(moreInfo.length); // Display all items when showing more
+      } else {
+        setVisibleItems(1); // Reset to display only the first item when showing less
+      }
+    };
+    
+
   return (
-    <div className='slide' >
+    <div  className={visibleItems !== 1 ? 'slide h-auto' : 'slide'} >
         <div className='img-wrap'>
             <img src={image} alt="" />
-        </div>
-        <div className={`content ${isMoreInfoShowing ? 'show' : ""}`} ref={navRef}>
-          <div className="flex">
-            <h3>{title}</h3>
-            <AiOutlinePlus className='logo' onClick={() => {setIsMoreInfoShowing(!isMoreInfoShowing)}}/>
+        </div>        
+        <div className={`content-wrapper`} ref={navRef}>
+          <div>
+            <h3>{title}</h3>            
+          </div>          
+          <div className="contents">
+            {
+              moreInfo &&
+              <ul>
+                {moreInfo.slice(0, visibleItems).map((info, index) => (<li key={index}>{info}</li>))}
+              </ul>
+            }
+            </div> 
+                    {moreInfo.length > 1 ? (
+                    <button onClick={handleShowMoreClick}>
+            {visibleItems < 2 ? 'Learn More' : 'Show  Less'}
+                    </button>
+                  ) : (
+                    <span></span>
+                  )}
           </div>
-          {moreInfo && <ul>{moreInfo.map((info, index) => <li key={index}>{info}</li>)}</ul>}
-        </div>   
     </div>
   )
 }
