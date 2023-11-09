@@ -6,8 +6,7 @@ const SlideComponent = ({image, title, moreInfo}) => {
     const [isMoreInfoShowing, setIsMoreInfoShowing] = useState(false);
     const [visibleItems, setVisibleItems] = useState(1);
     const navRef = useRef(null);
-    console.log('mORE ', moreInfo);
-    console.log(moreInfo.slice(0, visibleItems));
+   
   
     const closeNav = (e) => {
       // Check if the click occurred outside the navigation menu and toggle button
