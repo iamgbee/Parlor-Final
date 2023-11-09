@@ -68,6 +68,7 @@
 .img-holder .contents{
     width: 100%;
     margin-inline: auto;
+    margin-left: 12px;
 }
 .img-holder button{
     padding: 10px 20px;

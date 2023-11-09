@@ -59,6 +59,7 @@
 .slide .contents{
     width: 100%;
     margin-inline: auto;
+    margin-left: 12px;
 }
 .slide button{
     padding: 10px 20px;
