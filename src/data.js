@@ -6,7 +6,7 @@ import img5 from './assets/img5.png'
 import img6 from './assets/img6.png'
 import img7 from './assets/img7.png'
 
-export const faqs = [
+export const faqs = [ 
     {
         id: 1,
         question: "Do I need to sign a contract with Parlor Digital for their services?",
