@@ -13,6 +13,8 @@ const Contact = ({ title, subtitle }) => {
   const [formData, setFormData] = useState({ 
     firstName:'',
     lastName:'', 
+    companyName:'', 
+    telephoneNumber:'', 
     email:"", 
     message:"",
     isChecked: false, 
@@ -28,19 +30,20 @@ const Contact = ({ title, subtitle }) => {
 
     const currentDateTime = new Date();
     const formattedDateTime = currentDateTime.toLocaleString();
-    // https://script.google.com/macros/s/AKfycbwRgxRXt2gRNDzpXCgA7b0-qEUfc_vLVXThHVeWqZeuB3dcBP6IhV64UhT7iI7nBs4u/exec
-    // https://script.google.com/macros/s/AKfycbyPyKblYE9jxSCnU0REmwYcPnnrUrA0CQfafc3RIY_b201VdhSomNNE4ubyUIdNWiA6/exec
+    
     // Set the submissionTime directly in the form data
     const formDataObject = new FormData();
     formDataObject.append('firstname', formData.firstName);
     formDataObject.append('lastname', formData.lastName);
+    formDataObject.append('companyname', formData.companyName);
+    formDataObject.append('telephonenumber', formData.telephoneNumber);
     formDataObject.append('email', formData.email);
     formDataObject.append('message', formData.message);
     formDataObject.append('submissionTime', formattedDateTime);// Set the submissionTime here
 
-    // https://script.google.com/macros/s/AKfycbw5vRyxlopvG9B6aHYfV4yb_ZFnWPWKL7mzCyi_3Ltx8dqTuSw1MbXC2jCqG9QoJaU/exec
+   
     fetch(
-      'https://script.google.com/macros/s/AKfycbzRvKy1EsmlKCAFfdPyogpRDbllumwcIESJrzXjqSy3i_AurMv2dxhyVx7D1ySTShm_Gg/exec',
+      'https://script.google.com/macros/s/AKfycbx9RXEd8Kel870mfU18A8T5UYmtS0Zd6vLD6Yv0jXyTTzH-guK1fEJv9w79u__93b3NWQ/exec',
       {
         method: 'POST',
         body: formDataObject,
@@ -53,6 +56,8 @@ const Contact = ({ title, subtitle }) => {
         setSubmitting(false);
         formData.firstName ='';
         formData.lastName ='';
+        formData.telephoneNumber ='';
+        formData.companyName ='';
         formData.email ='';
         formData.message ='';
 
@@ -78,6 +83,7 @@ const Contact = ({ title, subtitle }) => {
         [name]: value,
       }));
     }    
+    console.log(formData)
   }
   return (
     <section className='section contact-section' id='contact-form'>
@@ -142,6 +148,32 @@ const Contact = ({ title, subtitle }) => {
                           id='last-name'
                           name='lastName'
                           value={formData.lastName}
+                          onChange={handleChange}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="name">
+                      <div>
+                        <label htmlFor="company-name">Company name</label>
+                        <input
+                          type="text"
+                          placeholder='Company name'
+                          id='company-name'
+                          name='companyName'
+                          value={formData.companyName}
+                          onChange={handleChange}
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label htmlFor="telephone-number">Telephone number</label>
+                        <input
+                          type="number"
+                          placeholder='Telephone number'
+                          id='telephone-number'
+                          name='telephoneNumber'
+                          value={formData.telephoneNumber}
                           onChange={handleChange}
                           required
                         />
